@@ -55,12 +55,13 @@ public class GmailSignInTest {
 				
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("signIn")));
 				
-		Assert.assertTrue("SignButton should exist",driver.findElements(By.id("signIn")).size()>0);		
-			}
+		Assert.assertTrue("SignButton should exist",driver.findElements(By.id("signIn")).size()>0);	
+		System.out.println("Gmail automation script successful");
+	}
+			
 @After
 public void tearDown()
 {
 	driver.quit();
 }
-
 }
